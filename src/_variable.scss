@@ -1,0 +1,28 @@
+$fontFamilyName: RedHatText;
+@font-face {
+  font-family: $fontFamilyName;
+  src: url("/assets/fonts/RedHatText-VariableFont_wght.ttf");
+}
+
+$font-size: 16px;
+$font-weights-sm: 400;
+$font-weights-m: 600;
+$font-weights-l: 700;
+$border-radius: 20px;
+$Outine-none: none;
+$border: none;
+
+$padding: 10px;
+
+$positionR: relative;
+$positionA: absolute;
+$positionF: fixed;
+
+$margin-bottom: 5px;
+$margin-right: 10px;
+$pointer: pointer;
+$margin-top: 10px;
+
+$width: 400px;
+$min-height: 200px;
+$height: 400px;

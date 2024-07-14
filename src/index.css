@@ -1,0 +1,286 @@
+@font-face {
+  font-family: RedHatText;
+  src: url("/assets/fonts/RedHatText-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: RedHatText;
+}
+
+.App {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  position: relative;
+}
+
+body {
+  background-color: hsl(13, 31%, 94%);
+}
+
+.reusedButton {
+  display: flex;
+  color: hsl(20, 50%, 98%);
+  justify-content: center;
+  text-align: center;
+  place-items: center;
+  width: 15px;
+  height: 15px;
+  border: 1px solid hsl(14, 25%, 72%);
+  border-radius: 20px;
+}
+.reusedButton:hover {
+  border: 1px solid hsl(14, 65%, 9%);
+  color: hsl(14, 65%, 9%);
+}
+
+.text {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: hsl(14, 86%, 42%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: 600;
+  color: hsl(20, 50%, 98%);
+  margin-top: 10px;
+}
+.text:hover {
+  background-color: hsl(7, 20%, 60%);
+}
+
+.CartPage {
+  background-color: hsl(20, 50%, 98%);
+  width: 400px;
+  min-height: 200px;
+  height: 400px;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  padding: 20px;
+  overflow-y: scroll;
+  border-radius: 10px;
+}
+.CartPage .YourCart {
+  color: hsl(14, 86%, 42%);
+  font-weight: 700;
+}
+.CartPage .CartProductList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  place-items: center;
+  border-bottom: 1px solid hsl(14, 25%, 72%);
+  padding-bottom: 15px;
+  margin-top: 20px;
+}
+.CartPage .CartProductList .CartProductList-Product {
+  padding-bottom: 5px;
+  color: hsl(14, 65%, 9%);
+  font-weight: 600;
+}
+.CartPage .CartProductList .q {
+  margin-right: 10px;
+  color: hsl(14, 86%, 42%);
+  font-weight: 600;
+}
+.CartPage .CartProductList .a {
+  margin-right: 10px;
+  font-weight: 400;
+  color: hsl(7, 20%, 60%);
+}
+.CartPage .CartProductList t {
+  font-weight: 700;
+  color: hsl(14, 25%, 72%);
+}
+.CartPage .Order {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+.CartPage .Order span {
+  font-size: 24px;
+  font-weight: 700;
+}
+.CartPage .Carbon {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: hsl(13, 31%, 94%);
+}
+.CartPage .Carbon p {
+  margin-right: 5px;
+  font-weight: 400;
+  color: hsl(7, 20%, 60%);
+}
+.CartPage .Carbon p span {
+  font-weight: 600;
+  color: hsl(12, 20%, 44%);
+}
+.CartPage .emptycart {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  height: 200px;
+}
+
+.dd h1 {
+  margin-bottom: 30px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 20px;
+  gap: 25px;
+}
+.main .ProductCard {
+  width: 200px;
+  margin-bottom: 100px;
+  height: 200px;
+}
+.main .ProductCard .ProductImageDiv {
+  position: relative;
+  margin-bottom: 30px;
+  height: 100%;
+}
+.main .ProductCard .ProductImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.main .ProductCard .buttonCart {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  background-color: hsl(20, 50%, 98%);
+  border-radius: 20px;
+  width: 150px;
+  position: absolute;
+  left: 10%;
+  bottom: -20px;
+  border: 1px solid hsl(12, 20%, 44%);
+}
+.main .ProductCard .buttonCart:hover {
+  border: 1px solid hsl(14, 86%, 42%);
+  cursor: pointer;
+}
+.main .ProductCard .buttonCart button {
+  color: hsl(12, 20%, 44%);
+  outline: none;
+  padding: 10px;
+  border: none;
+  background-color: hsl(20, 50%, 98%);
+  font-weight: 600;
+}
+.main .ProductCard .buttonCart button:hover {
+  color: hsl(14, 86%, 42%);
+  cursor: pointer;
+}
+.main .ProductCard .productSmallText {
+  font-size: 16px;
+  color: hsl(7, 20%, 60%);
+  margin-bottom: 5px;
+}
+.main .ProductCard .ProductName {
+  font-size: 16px;
+  font-weight: 600;
+  color: hsl(14, 65%, 9%);
+}
+.main .ProductCard .amount {
+  color: hsl(14, 86%, 42%);
+  font-size: 16px;
+  font-weight: 600;
+}
+.main .ProductCard .quantityset {
+  padding: 5px;
+  justify-content: space-around;
+  align-items: center;
+  place-items: center;
+  background-color: hsl(14, 86%, 42%);
+  width: 120px;
+  left: 20%;
+  color: hsl(20, 50%, 98%);
+}
+
+.CheckoutPage {
+  background-color: hsl(20, 50%, 98%);
+  width: 400px;
+  min-height: 200px;
+  height: 400px;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+.CheckoutPage h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 7.5px;
+}
+.CheckoutPage p {
+  margin-bottom: 5px;
+}
+.CheckoutPage img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+.CheckoutPage .Order {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+.CheckoutPage .Order span {
+  font-size: 24px;
+  font-weight: 700;
+}
+.CheckoutPage .CheckoutList {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(13, 31%, 94%);
+  padding: 20px;
+}
+.CheckoutPage .CheckoutList .CheckoutList-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  place-items: center;
+  border-bottom: 1px solid hsl(20, 50%, 98%);
+  padding-bottom: 10px;
+}
+.CheckoutPage .CheckoutList .CheckoutList-text {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.CheckoutPage .CheckoutList .CheckoutQuantity {
+  color: hsl(14, 86%, 42%);
+  margin-right: 10px;
+}
+.CheckoutPage .CheckoutList .checkoutPrice {
+  color: hsl(7, 20%, 60%);
+}
+.CheckoutPage .CheckoutTotalPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  place-items: center;
+  margin-top: 20px;
+}/*# sourceMappingURL=index.css.map */

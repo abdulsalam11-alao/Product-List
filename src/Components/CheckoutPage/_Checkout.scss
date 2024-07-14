@@ -1,0 +1,69 @@
+@mixin flexlayout() {
+  display: flex;
+  justify-content: space-between;
+}
+.CheckoutPage {
+  //   position: $positionA;
+  background-color: $Rose-50;
+  width: $width;
+  min-height: $min-height;
+  height: $height;
+  max-height: max-content;
+  padding: $padding * 2;
+  border-radius: $border-radius/2;
+  overflow-y: scroll;
+  h2 {
+    font-size: $font-size * 2;
+    font-weight: $font-weights-l;
+    margin-bottom: $margin-bottom * 1.5;
+  }
+  p {
+    margin-bottom: $margin-bottom;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: $border-radius/2;
+  }
+  .Order {
+    @include flexlayout();
+    padding-top: $padding * 2.5;
+    span {
+      font-size: 24px;
+      font-weight: $font-weights-l;
+    }
+  }
+  .CheckoutList {
+    @include flexlayout();
+
+    background-color: $Rose-100;
+    padding: $padding * 2;
+    // border-bottom: 1px solid $Rose-100;
+
+    .CheckoutList-card {
+      @include flexlayout();
+      align-items: center;
+      place-items: center;
+      border-bottom: 1px solid $Rose-50;
+      padding-bottom: $padding;
+    }
+    .CheckoutList-text {
+      margin-left: 10px;
+      font-size: $font-size;
+      font-weight: $font-weights-m;
+    }
+    .CheckoutQuantity {
+      color: $red;
+      margin-right: $margin-right;
+    }
+    .checkoutPrice {
+      color: $Rose-400;
+    }
+  }
+  .CheckoutTotalPrice {
+    @include flexlayout();
+    align-items: center;
+    place-items: center;
+    margin-top: 20px;
+  }
+}

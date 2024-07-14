@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $fontFamilyName;
+}
+.App {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  position: $positionR;
+}
+body {
+  background-color: $Rose-100;
+}
+.reusedButton {
+  // @include flexlayout();
+  display: flex;
+  color: $Rose-50;
+  justify-content: center;
+  text-align: center;
+  place-items: center;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $Rose-300;
+  border-radius: 20px;
+  &:hover {
+    border: 1px solid $Rose-900;
+    color: $Rose-900;
+  }
+}
+
+.text {
+  width: 100%;
+  border-radius: $border-radius;
+  border: $border;
+  outline: $Outine-none;
+  background-color: $red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: $pointer;
+  padding: $padding;
+  font-weight: $font-weights-m;
+  color: $Rose-50;
+  margin-top: $margin-top;
+  &:hover {
+    background-color: $Rose-400;
+  }
+}

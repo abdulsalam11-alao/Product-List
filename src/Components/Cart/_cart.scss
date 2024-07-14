@@ -1,0 +1,87 @@
+@mixin flexlayout() {
+  display: flex;
+  justify-content: space-between;
+}
+.CartPage {
+  background-color: $Rose-50;
+  width: $width;
+  min-height: $min-height;
+  height: $height;
+  max-height: max-content;
+  padding: $padding * 2;
+  overflow-y: scroll;
+
+  border-radius: $border-radius/2;
+  .YourCart {
+    color: $red;
+    font-weight: $font-weights-l;
+    // position: $positionF;
+  }
+  .CartProductList {
+    @include flexlayout();
+    align-items: center;
+    place-items: center;
+    border-bottom: 1px solid $Rose-300;
+    padding-bottom: $padding * 1.5;
+    margin-top: 20px;
+
+    .CartProductList-Product {
+      padding-bottom: $padding/2;
+      color: $Rose-900;
+      font-weight: $font-weights-m;
+    }
+    .q {
+      margin-right: $margin-right;
+      color: $red;
+      font-weight: $font-weights-m;
+    }
+    .a {
+      margin-right: $margin-right;
+      font-weight: $font-weights-sm;
+      color: $Rose-400;
+    }
+    t {
+      font-weight: $font-weights-l;
+      color: $Rose-300;
+    }
+  }
+  .Order {
+    @include flexlayout();
+    padding-top: $padding * 2.5;
+    span {
+      font-size: 24px;
+      font-weight: $font-weights-l;
+    }
+  }
+  .Carbon {
+    @include flexlayout();
+    justify-content: center;
+    padding: $padding;
+    width: 100%;
+    // border: 1px solid blue;
+    border: $border;
+    outline: $Outine-none;
+    border-radius: $border-radius/2;
+    background-color: $Rose-100;
+    // padding: auto;
+    p {
+      margin-right: $margin-right * 0.5;
+      font-weight: $font-weights-sm;
+      color: $Rose-400;
+      span {
+        font-weight: $font-weights-m;
+        color: $Rose-500;
+      }
+    }
+  }
+  .emptycart {
+    @include flexlayout();
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    margin-top: 10px;
+    font-weight: $font-weights-sm;
+    font-size: $font-size;
+    height: 200px;
+  }
+}

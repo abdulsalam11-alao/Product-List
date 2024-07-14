@@ -1,0 +1,87 @@
+@mixin flexlayout() {
+  display: flex;
+  justify-content: center;
+}
+.dd {
+  h1 {
+    margin-bottom: 30px;
+  }
+}
+
+.main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 20px;
+  gap: 25px;
+
+  .ProductCard {
+    width: 200px;
+    margin-bottom: 100px;
+    height: 200px;
+    .ProductImageDiv {
+      position: $positionR;
+      margin-bottom: 30px;
+      height: 100%;
+    }
+
+    .ProductImage {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+    .buttonCart {
+      @include flexlayout();
+      justify-content: center;
+      background-color: $Rose-50;
+      border-radius: $border-radius;
+      width: 150px;
+      position: $positionA;
+      left: 10%;
+      bottom: -20px;
+      border: 1px solid $Rose-500;
+      &:hover {
+        border: 1px solid $red;
+        cursor: pointer;
+      }
+
+      button {
+        color: $Rose-500;
+        outline: $Outine-none;
+        padding: $padding;
+        border: $border;
+        background-color: $Rose-50;
+        font-weight: $font-weights-m;
+        &:hover {
+          color: $red;
+          cursor: pointer;
+        }
+      }
+    }
+    .productSmallText {
+      font-size: $font-size;
+      color: $Rose-400;
+      margin-bottom: $margin-bottom;
+    }
+    .ProductName {
+      font-size: $font-size;
+      font-weight: $font-weights-m;
+      color: $Rose-900;
+      $margin-bottom: $margin-bottom;
+    }
+    .amount {
+      color: $red;
+      font-size: $font-size;
+      font-weight: $font-weights-m;
+    }
+    .quantityset {
+      padding: $padding/2;
+      justify-content: space-around;
+      align-items: center;
+      place-items: center;
+      background-color: $red;
+      width: 120px;
+      left: 20%;
+      color: $Rose-50;
+    }
+  }
+}
